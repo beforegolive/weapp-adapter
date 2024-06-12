@@ -1,3 +1,4 @@
+/* eslint-disable no-void */
 import * as window from './window'
 import Event from './Event'
 import HTMLElement from './HTMLElement'
@@ -47,6 +48,10 @@ const document = {
 
     createElementNS(nameSpace, tagName) {
         return this.createElement(tagName)
+    },
+
+    elementFromPoint(clientX, clientY) {
+        return window.canvas
     },
 
     createTextNode(text) {
